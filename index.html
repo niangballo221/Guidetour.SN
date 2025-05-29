@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guide TOUR Sénégal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_responsive.css" />
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html"><span>Guide Tour</span> Sénégal</a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">à propos</a></li>
+        <li><a href="popular-destination.html">destinations</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+    <a href="reservation.html" class="btn-reservation">Réserver Maintenant</a>
+</header>
+
+<section id="home">
+    <h4>Voyagez en Sécurité</h4>
+    <a href="reservation.html" class="btn-reservation">Réserver Maintenant</a>
+</section>
+
+ <footer>
+        <p>&copy; 2025 Guide Tour Sénégal. Tous droits réservés.</p>
+    </footer>
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

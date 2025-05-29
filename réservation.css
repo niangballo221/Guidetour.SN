@@ -1,0 +1,67 @@
+.reservation-section {
+    position: relative;
+    padding: 100px 0;
+    color: white;
+}
+
+.reservation-section .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.reservation-form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+form .btn-reserver {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: transparent;
+    color: cyan;
+    border: 2px solid cyan;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form .btn-reserver:hover {
+    background-color: cyan;
+    color: #000;
+}
+select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.reservation-section {
+    position: relative;
+    padding: 100px 0;
+    color: white;
+    background-image: url('images/bg-reservation.png'); /* Ton image ici */
+    background-position: center;
+    background-size: cover; /* L’image couvre toute la section */
+    background-attachment: fixed; /* L’arrière-plan reste fixe lorsque tu fais défiler la page */
+}

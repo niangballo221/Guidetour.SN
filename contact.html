@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirTravel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>Guide Tour</span> Sénégal</a>
+        </div>
+         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">à propos</a></li>
+        <li><a href="popular-destination.html">destinations</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+    </header>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Remplissez le formulaire ou utilisez les moyens ci-dessous pour nous joindre.</p>
+    
+        <form action="send_message.php" method="POST">
+          <input type="text" name="name" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre email" required>
+          <textarea name="message" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+    
+        <div class="contact-info">
+          <p><strong>Email :</strong> contact@monsite.com</p>
+          <p><strong>Téléphone :</strong> +221 77 731 12 69</p>
+          <p><strong>Adresse :</strong> Mbour, Sénégal</p>
+          <a href="https://wa.me/+221777311269?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20infos%20sur%20vos%20services." 
+             target="_blank" 
+             class="whatsapp-button">💬 Discuter sur WhatsApp</a>
+        </div>
+      </section>
+    
+      <!-- BOUTON WHATSAPP FLOTTANT -->
+      <a href="https://wa.me/+221777311269?text=Bonjour%2C%20je%20veux%20plus%20d'infos%20sur%20vos%20services." 
+         class="whatsapp-float" 
+         target="_blank" 
+         title="Contactez-nous sur WhatsApp">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+      </a>
+
+    <footer>
+        <p> Réalisé par <span>Niangballô Dev</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+     <footer>
+        <p>&copy; 2025 Guide Tour Sénégal. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
