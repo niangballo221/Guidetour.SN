@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réservation - AirTravel</title>
     <link rel="stylesheet" href="style_responsive.css">
     <link rel="stylesheet" href="style.css" />
@@ -13,7 +14,7 @@
         <div class="logo">
             <a href="index.html"><span>Guide Tour</span> Sénégal</a>
         </div>
-         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <ul class="menu">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="a-propos.html">À propos</a></li>
@@ -30,10 +31,10 @@
                 <form action="traitement.php" method="post">
                     <label for="nom">Nom complet :</label>
                     <input type="text" id="nom" name="nom" required>
-    
+
                     <label for="email">Email :</label>
                     <input type="email" id="email" name="email" required>
-    
+
                     <label for="destination">Destination :</label>
                     <select id="destination" name="destination" required>
                         <option value="" disabled selected>Choisissez une destination</option>
@@ -46,19 +47,19 @@
                         <option value="Parc hann">Parc hann</option>
                         <option value="parc de djoudj">parc de djoudj</option>
                     </select>
-    
+
                     <label for="date">Date de départ :</label>
                     <input type="date" id="date" name="date" required>
-    
+
                     <input type="submit" value="Réserver" class="btn-reserver">
                 </form>
             </div>
         </div>
     </main>
-    
 
     <!-- FOOTER -->
-     <footer>
+    <footer>
         <p>&copy; 2025 Guide Tour Sénégal. Tous droits réservés.</p>
     </footer>
+</body>
 </html>
