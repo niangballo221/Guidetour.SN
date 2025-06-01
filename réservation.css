@@ -1,14 +1,23 @@
+/* SECTION RESERVATION en plein écran */
 .reservation-section {
     position: relative;
-    padding: 100px 0;
+    height: 100vh;
     color: white;
+    background-image: url('images/bg-reservation.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Fond sombre + largeur responsive */
 .reservation-section .overlay {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 60px 20px;
-    max-width: 600px;
-    margin: auto;
+    padding: 30px 20px;
+    width: 90%;
+    max-width: 500px;
     border-radius: 10px;
 }
 
@@ -29,7 +38,8 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
-form input[type="date"] {
+form input[type="date"],
+form select {
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
@@ -49,19 +59,4 @@ form .btn-reserver {
 form .btn-reserver:hover {
     background-color: cyan;
     color: #000;
-}
-select {
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: none;
-}
-.reservation-section {
-    position: relative;
-    padding: 100px 0;
-    color: white;
-    background-image: url('images/bg-reservation.png'); /* Ton image ici */
-    background-position: center;
-    background-size: cover; /* L’image couvre toute la section */
-    background-attachment: fixed; /* L’arrière-plan reste fixe lorsque tu fais défiler la page */
 }
