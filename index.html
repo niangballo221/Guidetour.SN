@@ -7,6 +7,43 @@
     <title>Guide TOUR Sénégal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style_responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            border-top: 1px solid cyan;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            z-index: 1000;
+        }
+
+        .bottom-nav a {
+            text-decoration: none;
+            color: cyan;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bottom-nav a.active {
+            color: cyan;
+        }
+
+        .bottom-nav i {
+            font-size: 20px;
+        }
+
+        body {
+            padding-bottom: 70px; /* Pour éviter que le contenu ne soit caché par la barre */
+        }
+    </style>
 </head>
 <body>
 
@@ -14,14 +51,13 @@
     <div class="logo">
         <a href="index.html"><span>Guide Tour</span> Sénégal</a>
     </div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    
     <ul class="menu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="a-propos.html">à propos</a></li>
         <li><a href="popular-destination.html">destinations</a></li>
         <li><a href="contact.html">contact</a></li>
     </ul>
-    
 </header>
 
 <section id="home">
@@ -29,9 +65,34 @@
     <a href="reservation.html" class="btn-reservation">Réserver Maintenant</a>
 </section>
 
- <footer>
-        <p>&copy; 2025 Guide Tour Sénégal. Tous droits réservés.</p>
-    </footer>
+<!-- Barre de navigation inférieure -->
+<nav class="bottom-nav">
+    <a href="index.html" class="active">
+        <i class="fas fa-home"></i>
+        Accueil
+    </a>
+    <a href="reservation.html">
+        <i class="fas fa-calendar-check"></i>
+        Réservation
+    </a>
+    <a href="a-propos.html">
+        <i class="fas fa-info-circle"></i>
+        À propos
+    </a>
+    <a href="popular-destination.html">
+        <i class="fas fa-map-marker-alt"></i>
+        Destination
+    </a>
+    <a href="contact.html">
+        <i class="fas fa-envelope"></i>
+        Contact
+    </a>
+</nav>
+
+<footer>
+    <p>&copy; 2025 Guide Tour Sénégal. Tous droits réservés.</p>
+</footer>
+
 <script>
 function toggleMenu() {
     const menu = document.querySelector('.menu');
