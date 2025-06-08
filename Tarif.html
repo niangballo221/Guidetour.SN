@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarifs - Guide Tour Sénégal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Ton style principal -->
+     <link rel="stylesheet" href="style_responsive.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f8ff;
+            margin: 0;
+            padding-bottom: 70px; /* espace pour la barre nav inférieure */
+        }
+
+        .tarif-section {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .tarif-section h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #00796b;
+        }
+
+        .tarif-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #009688;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .tarif-table th, .tarif-table td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .tarif-table th {
+            background-color: #009688;
+            color:;
+        }
+
+        .tarif-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .tarif-table tr:hover {
+            background-color: 
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            border-top: 1px solid #009688;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .bottom-nav a {
+            text-align: center;
+            color: #009688;
+            font-size: 12px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bottom-nav a i {
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+
+        .bottom-nav a.active {
+            color: #009688;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>Guide Tour</span> Sénégal</a>
+        </div>
+         
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">à propos</a></li>
+        <li><a href="popular-destination.html">destinations</a></li>
+        <li><a href="contact.html">contact</a></li>
+         <li><a href="Tarif.html">Tarif</a></li>
+    
+    </ul>
+    </header> 
+
+<section class="tarif-section">
+    <h1><i class="fas fa-ticket-alt"></i> Nos Tarifs</h1>
+    <table class="tarif-table">
+        <thead>
+            <tr>
+                <th>Destination</th>
+                <th>Adulte</th>
+                <th>Enfant</th>
+                <th>Durée</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ranch aux lions 🦁</td>
+                <td>65€</td>
+                <td>—</td>
+                <td>1 journée</td>
+            </tr>
+            <tr>
+                <td>Bandia</td>
+                <td>75€</td>
+                <td>35€</td>
+                <td>1 journée</td>
+            </tr>
+            <tr>
+                <td>Gorée</td>
+                <td>70€</td>
+                <td>—</td>
+                <td>1 journée</td>
+            </tr>
+            <tr>
+                <td>Île aux coquillages</td>
+                <td>30€</td>
+                <td>15€</td>
+                <td>1 journée</td>
+            </tr>
+            <tr>
+                <td>Delta du Saloum</td>
+                <td>40€</td>
+                <td>20€</td>
+                <td>1 journée</td>
+            </tr>
+            <tr>
+                <td>Désert de Lompoul + Saint-Louis</td>
+                <td>290€</td>
+                <td>—</td>
+                <td>3 jours</td>
+            </tr>
+            <tr>
+                <td>Gorée + Lac Rose</td>
+                <td>150€</td>
+                <td>—</td>
+                <td>1 journée</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Barre de navigation inférieure -->
+<nav class="bottom-nav">
+    <a href="index.html"><i class="fas fa-home"></i>Accueil</a>
+    <a href="reservation.html"><i class="fas fa-calendar-check"></i>Réservation</a>
+    <a href="tarifs.html" class="active"><i class="fas fa-ticket-alt"></i>Tarifs</a>
+    <a href="popular-destination.html"><i class="fas fa-map-marker-alt"></i>Destination</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
+</nav>
+
+</body>
+</html>
