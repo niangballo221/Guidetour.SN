@@ -651,3 +651,27 @@ GALERY
 .gallery-grid img:hover {
   transform: scale(1.05);
 }
+
+
+
+.instagram-float {
+    position: fixed;
+    bottom: 80px; /* juste au-dessus de WhatsApp */
+    right: 20px;
+    z-index: 1000;
+    background-color: #E4405F;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.instagram-float img {
+    width: 30px;
+    height: 30px;
+}
+
+.instagram-float:hover {
+    transform: scale(1.1);
+    background-color: #C13584;
+}
