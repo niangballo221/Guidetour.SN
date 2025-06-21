@@ -6,7 +6,7 @@
     <title>AirTravel</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style_responsive.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .bottom-nav {
             position: fixed;
@@ -50,87 +50,103 @@
             <a href="index.html"> <span>Guide Tour</span> Sénégal</a>
         </div>
         
-    <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">à propos</a></li>
-        <li><a href="popular-destination.html">destinations</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="Tarif.html">Tarif</a></li>
-         <li><a href="Gallery.html">Galerie</a></li>
-    </ul>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">à propos</a></li>
+            <li><a href="popular-destination.html">destinations</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="Tarif.html">Tarif</a></li>
+            <li><a href="Gallery.html">Galerie</a></li>
+        </ul>
     </header>
+
     <section id="contact">
         <h2>En cas de problème technique, vous pouvez nous contacter via WhatsApp ou par email.</h2>
-        <h2>Contactez-nous</h2>
         <p>Remplissez le formulaire ou utilisez les moyens ci-dessous pour nous joindre.</p>
     
         <form action="send_message.php" method="POST">
-          <input type="text" name="name" placeholder="Votre nom" required>
-          <input type="email" name="email" placeholder="Votre email" required>
-          <textarea name="message" placeholder="Votre message" required></textarea>
-          <button type="submit">Envoyer</button>
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
         </form>
     
         <div class="contact-info">
-          <p><strong>Email :</strong>afockguide@gmail.com</p>
-          <p><strong>Téléphone :</strong> +221 77 731 12 69</p>
-          <p><strong>Adresse :</strong> Mbour, Sénégal</p>
-          <a href="https://wa.me/+221777311269?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20infos%20sur%20vos%20services." 
-             target="_blank" 
-             class="whatsapp-button">💬 Discuter sur WhatsApp</a>
-        </div>
-      </section>
-    
-      <!-- BOUTON WHATSAPP FLOTTANT -->
-      <a href="https://wa.me/+221777311269?text=Bonjour%2C%20je%20veux%20plus%20d'infos%20sur%20vos%20services." 
-         class="whatsapp-float" 
-         target="_blank" 
-         title="Contactez-nous sur WhatsApp">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
-      </a>
+            <p><strong>Email :</strong> contact@monsite.com</p>
+            <p><strong>Téléphone :</strong> +221 77 731 12 69</p>
+            <p><strong>Adresse :</strong> Mbour, Sénégal</p>
 
-      <!-- Barre de navigation inférieure -->
-<nav class="bottom-nav">
-    <a href="index.html" class="active">
-        <i class="fas fa-home"></i>
-        Accueil
+            <a href="https://wa.me/+221777311269?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20infos%20sur%20vos%20services." 
+               target="_blank" 
+               class="whatsapp-button">💬 Discuter sur WhatsApp</a>
+
+            <a href="https://www.instagram.com/guidetoursenegal?igsh=MTBiaTY1Z292MTRmOA==" 
+               target="_blank" 
+               class="instagram-button"
+               style="display: inline-block; margin-top: 10px; background-color: #E4405F; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+               <i class="fab fa-instagram" style="margin-right: 8px;"></i> Suivez-nous sur Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- BOUTON WHATSAPP FLOTTANT -->
+    <a href="https://wa.me/+221777311269?text=Bonjour%2C%20je%20veux%20plus%20d'infos%20sur%20vos%20services." 
+       class="whatsapp-float" 
+       target="_blank" 
+       title="Contactez-nous sur WhatsApp">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
     </a>
-    <a href="reservation.html">
-        <i class="fas fa-calendar-check"></i>
-        Réservation
-    </a>
-    <a href="a-propos.html">
-        <i class="fas fa-info-circle"></i>
-        À propos
-    </a>
-    <a href="popular-destination.html">
-        <i class="fas fa-map-marker-alt"></i>
-        Destination
-    </a>
-    <a href="contact.html">
-        <i class="fas fa-envelope"></i>
-        Contact
-    </a>
-     <a href="Tarif.html">
-        <i class="fas fa-ticket-alt"></i>
-        Tarifs
-    </a>
-   <a href="Gallery.html">
-  <i class="fas fa-images"></i>
-  Galerie
+    <!-- BOUTON INSTAGRAM FLOTTANT -->
+<a href="https://www.instagram.com/guidetoursenegal?igsh=MTBiaTY1Z292MTRmOA==" 
+   class="instagram-float" 
+   target="_blank" 
+   title="Suivez-nous sur Instagram">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
 </a>
 
-</nav>
+
+    <!-- Barre de navigation inférieure -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="active">
+            <i class="fas fa-home"></i>
+            Accueil
+        </a>
+        <a href="reservation.html">
+            <i class="fas fa-calendar-check"></i>
+            Réservation
+        </a>
+        <a href="a-propos.html">
+            <i class="fas fa-info-circle"></i>
+            À propos
+        </a>
+        <a href="popular-destination.html">
+            <i class="fas fa-map-marker-alt"></i>
+            Destination
+        </a>
+        <a href="contact.html">
+            <i class="fas fa-envelope"></i>
+            Contact
+        </a>
+        <a href="tarif.html">
+            <i class="fas fa-ticket-alt"></i>
+            Tarifs
+        </a>
+        <a href="galerie.html">
+            <i class="fas fa-images"></i>
+            Galerie
+        </a>
+    </nav>
     
     <script>
         var toggle_menu = document.querySelector('.responsive-menu');
         var menu = document.querySelector('.menu');
-        toggle_menu.onclick= function(){
-             toggle_menu.classList.toggle('active');
-             menu.classList.toggle('responsive')
+        toggle_menu.onclick = function() {
+            toggle_menu.classList.toggle('active');
+            menu.classList.toggle('responsive');
         }
     </script>
-     <footer>
+
+    <footer>
         <p>&copy; 2025 Guide Tour Sénégal. Tous droits réservés.</p>
     </footer>
 </body>
